@@ -13,5 +13,4 @@ export const colorGreyDark2 = '6D5D4B';
 // FONT VARIABLES
 export const FontPrimary = 'Nunito, sans-serif';
 export const FontDisplay = 'Josefin Sans, sans-serif';
-
 export const FontSecondary = 'Lato, sans-serif';

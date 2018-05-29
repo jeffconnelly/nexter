@@ -1,21 +1,34 @@
-import React, { Component } from 'react';
-import logo from '../logo.svg';
+import React from 'react';
 import styled from 'styled-components';
-import './App.css';
 import * as base from '../Shared/base';
 
-const NewHeader = styled.h1`
-  color: ${base.colorSecondary};
-  font-family: ${base.FontSecondary};
-`;
-class App extends Component {
+import Sidebar from './Sidebar';
+import Header from './Header';
+import Realtors from './Realtors';
+import Features from './Features';
+import Story from './Story';
+import Homes from './Homes';
+import Gallery from './Gallery';
+import Footer from './Footer';
+
+// const NewHeader = styled.h1`
+//   color: ${base.colorSecondary};
+//   font-family: ${base.FontSecondary};
+// `;
+
+export default class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <NewHeader>This is some examples of font and color change!</NewHeader>
-      </div>
+      <section>
+        <Sidebar />
+        <Header />
+        <Realtors />
+        <Features />
+        <Story />
+        <Homes />
+        <Gallery />
+        <Footer />
+      </section>
     );
   }
 }
-
-export default App;
