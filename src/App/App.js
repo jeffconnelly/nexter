@@ -6,7 +6,8 @@ import Sidebar from './Sidebar';
 import Header from './Header';
 import Realtors from './Realtors';
 import Features from './Features';
-import Story from './Story';
+import StoryPictures from './StoryPictures';
+import StoryContent from './StoryContent';
 import Homes from './Homes';
 import Gallery from './Gallery';
 import Footer from './Footer';
@@ -16,19 +17,39 @@ import Footer from './Footer';
 //   font-family: ${base.FontSecondary};
 // `;
 
+const Container = styled.section`
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns:
+    [sidebar-start] 8rem [sidebar-end full-start] minmax(
+      6rem,
+      1fr
+    ) 1fr [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end]
+    minmax(6rem, 1fr) [full-end];
+  & > * {
+    padding: 40px;
+    font-size: 3rem;
+  }
+`;
+
 export default class App extends React.Component {
   render() {
     return (
-      <section>
+      <Container>
         <Sidebar />
         <Header />
         <Realtors />
         <Features />
-        <Story />
+        <StoryPictures />
+        <StoryContent />
         <Homes />
         <Gallery />
         <Footer />
-      </section>
+      </Container>
     );
   }
 }
