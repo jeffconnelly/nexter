@@ -33,7 +33,5 @@ export const heading4 = styled.h4`
   font-family: ${FontSecondary};
   font-weight: 400;
   font-size: 1.9rem;
-
-  /* && light will be color: colorGreyLight1
-  
+  /* && light will be color: colorGreyLight1 */
 `;

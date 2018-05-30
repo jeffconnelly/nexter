@@ -7,6 +7,14 @@ const StoryContent = styled.div`
   grid-column: col-start 5 / full-end;
 `;
 
+const Header3 = styled(base.heading3)``;
+
+const Header2 = styled(base.heading2)``;
 export default function Story() {
-  return <StoryContent>Story content</StoryContent>;
+  return (
+    <StoryContent>
+      <Header3>Happy Customers</Header3>
+      <Header2>The best decision</Header2>
+    </StoryContent>
+  );
 }
