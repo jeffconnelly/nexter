@@ -37,7 +37,7 @@ const FeatureText = styled.p`
   font-size: 1.7rem;
 `;
 
-export default class App extends React.Component {
+export default class Features extends React.Component {
   render() {
     return (
       <FeaturesWrapper>
